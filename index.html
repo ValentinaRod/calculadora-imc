@@ -3,9 +3,29 @@
 <head>
 	<meta charset="utf-8">
 	<title>calculadora icm</title>
-	
+
 </head>
 <body>
+	<h1>Calculadora de IMC</h1>
+	<section>
+		<p>
+			<label for="peso">Peso</label>
+			<input type="number" name="peso" id="peso" required>
+			kg.
+		</p>
+		<p>
+			<label for="altura">Altura</label>
+			<input type="number" name="altura" id="altura" required>
+			cm.
+		</p>
+		<p>
+			<input type="submit" name="res" value="Resultado" onclick="calculardoraImc()" id="res">
+		</p>
+		<p>
+			*Para hacer efectivo el calculo por favor ingrese su peso en kg y su altura en cm.
+		</p>
+	</section>
 	<<script src="assets/javascript/main.js"></script>
+
 </body>
 </html>

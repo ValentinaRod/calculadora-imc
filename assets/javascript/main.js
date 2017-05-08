@@ -1,4 +1,5 @@
 
+
 var x = document.getElementById("myText").value;
     document.getElementById("demo").innerHTML = x;
 
@@ -21,4 +22,12 @@ return alert("Tu Indice de Masa Corporal (IMC) es " + calculo);
 calcularImc();
 
 
+
+
+function calculardoraImc(peso, altura){   // imc= kg/m^2
+  var peso = document.getElementById('peso').value;
+  var altura = (document.getElementById('altura').value / 100);
+  var imc = peso / Math.pow(altura,2);
+  alert("Su indice de masa corporal es: " + imc.toFixed(2));
+};
 
